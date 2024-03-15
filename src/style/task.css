@@ -1,5 +1,10 @@
 .card{
-    background: gray;
-    color: white;
-    padding: 20px;
+    text-align: center;
+    margin: auto;
+    border: 2px double black;
+    width: 15rem;
+    height: auto;
+}
+.Tema{
+    border-bottom: 2px dashed black;
 }

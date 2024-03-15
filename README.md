@@ -209,3 +209,25 @@ dependiendo de un resultado dado.
 
 		style>
 		<div style = {res ? {color:'lightgreen'} : {color: 'white'}}>
+--- tipos de componentes
+Existen algunas formas de crear componentes estas pueden ser funciones o clases
+		function Saludar(){
+			return <div><h1>Hola mundo</h1></div>
+		}
+		class Saludar(){
+			render(){
+				return <div><h1>Hola mundo</h1></div>
+			}
+		}
+
+Cada una de estos componentes tiene su forma de manejar las funciones devulven algun componente y las class crean un render en la misma clase.
+
+--- Event Handler
+
+EventHandler es un medio por donde react maneja eventos por ejemplo un evento Onclick en un boton. Estos eventos se manejan por una funcion.
+
+	<button Onclick = {function(){
+		console.log('Precionaron el boton')
+	}}></button>
+
+

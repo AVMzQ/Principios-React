@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from 'react-dom/client';
 import {Saludar, Temas, Temas2, Usuario} from './componentes/Dialogos.js'
 import Productos from './componentes/productos.js'
-import {Button} from './componentes/Buttons.js'
+import {Button, Button_Click} from './componentes/Buttons.js'
 import {TaskCard} from './componentes/Task.js'
 
 let titutlo = "Que es React?";
 let descripcion = "React es una biblioteca de código abierto para crear interfaces de usuario. Es una de las bibliotecas JavaScript más populares entre los desarrolladores Front End, programadores y testers de software."
-
 let usuarios =[{
     id: 1,
     nom: "Angel",
@@ -20,15 +19,16 @@ let usuarios =[{
     nomUsuario: "zQ_2",
     Edad: 24,   
 },]
+let tareaTerminada = true
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <>
+    <div className="main">
         <Saludar/>
-        <Productos/>
         <Temas titulo = {titutlo} descripcion = {descripcion} />
         <Temas2 titulo={titutlo} descripcion= {descripcion} />
         <Usuario us = {usuarios} />
         <Button texto = {'click'}/>
-        <TaskCard tarea = {true}/>
-    </>
+        <TaskCard tarea = {tareaTerminada}/>
+        <Button_Click/>
+    </div>
 )
