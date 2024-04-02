@@ -1,6 +1,7 @@
 REACT
 
 --- PRINCIPIOS -------------------
+
 El body de react esta centrado en public> index.html
 
     <div id="root"></div>
@@ -102,6 +103,7 @@ Dividir multiples componentes en multiples archivos
 para utilizar una funcion en index se debe de crear el 
 componente con la palabra export. de esta manera se puede importar en el index
 		-> Export
+  
 		export funcion Saludo(){
 			return <h1>Hola!</h1>;
 		}
@@ -112,6 +114,7 @@ Existe otra forma de exportar un componente pero este metodo solo exporta un el
 componente seleccionado al final del archivo, es decir, al momento de importar el archivo 
 react solo exportara el componente seleccionado.
 		-> Export
+  
 		export default TuComponente;
 
 		-> Import
@@ -145,6 +148,7 @@ Los Props son utilizados para variar el resultado deseado de un componente.
 		}
 
 Paso de Prop 
+
         <Temas titulo = {titutlo} descripcion = {descripcion} />
         <Temas2 titulo={titutlo} descripcion={descripcion} />
 
@@ -163,6 +167,7 @@ Como se utiliza?
 			text: PropTyps.string.isRequired;
 		}
 como se agregar valores por defecto?
+
 		Button.prototype{
 			texto = "";
 		}
