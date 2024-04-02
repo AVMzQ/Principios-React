@@ -1,8 +1,6 @@
 REACT
 
 --- PRINCIPIOS -------------------
-
-
 El body de react esta centrado en public> index.html
 
     <div id="root"></div>
@@ -157,8 +155,10 @@ Un prop tambien puede recibir una funcion.
 Para especificarle al desarrollador que tipo de dato vamos a manejar en un componente debemos
  de importar un paquete, esta se llama npm propsTyps
 Como se importa?
+
 		import PropTyps from 'prop-typs'
 Como se utiliza?
+
 		TuComponente.proptype{
 			text: PropTyps.string.isRequired;
 		}
@@ -198,6 +198,7 @@ componente.
 			padding: '20px';
 		}
 componente 
+
 		import './estilo-task.css'
 		<div className = 'card'></div>
 
@@ -211,6 +212,7 @@ dependiendo de un resultado dado.
 		<div style = {res ? {color:'lightgreen'} : {color: 'white'}}>
 --- tipos de componentes
 Existen algunas formas de crear componentes estas pueden ser funciones o clases
+
 		function Saludar(){
 			return <div><h1>Hola mundo</h1></div>
 		}
